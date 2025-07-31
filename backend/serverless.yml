@@ -1,0 +1,26 @@
+service: cloud-cost-backend
+frameworkVersion: '3'
+
+provider:
+  name: aws
+  runtime: nodejs18.x
+  region: us-east-1
+  environment:
+    AWS_NODEJS_CONNECTION_REUSE_ENABLED: '1'
+  iam:
+    role:
+      statements:
+        - Effect: "Allow"
+          Action:
+            - "ce:GetCostAndUsage"
+            - "sns:Publish"
+          Resource: "*"
+
+functions:
+  getCosts:
+    handler: handler.getCosts
+    events:
+      - http:
+          path: costs
+          method: get
+          cors: true

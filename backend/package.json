@@ -1,0 +1,18 @@
+{
+  "name": "backend",
+  "version": "1.0.0",
+  "description": "AWS Lambda Backend for Cloud Cost Monitoring",
+  "main": "handler.js",
+  "scripts": {
+    "deploy": "serverless deploy",
+    "dev": "serverless offline"
+  },
+  "dependencies": {
+    "aws-sdk": "^2.1555.0",
+    "serverless-http": "^3.0.2"
+  },
+  "devDependencies": {
+    "serverless": "^3.38.0",
+    "serverless-offline": "^12.0.4"
+  }
+}
