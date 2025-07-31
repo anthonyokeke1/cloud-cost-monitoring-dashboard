@@ -174,7 +174,7 @@ Or deploy and test via API Gateway endpoint.
 **Anthony Okeke**  
 🌍 Software Engineer & DevOps Consultant  
 📧 cyberokeke@gmail.com
-📂 GitHub: [@yourusername](https://github.com/anthonyokeke1)
+
 
 ---
 
